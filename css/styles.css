@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/********** Typography **********/
+
+body {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
+}
+
+nav a {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+#login-btn {
+    font-size: 1rem;
+    color: #fff;
+}
+
+input,
+button {
+    font-family: 'Arial', sans-serif;
+}
+
+input {
+    font-size: 1.15rem;
+}
+
+button {
+    color: #3c4043;
+}
+
+main > p {
+    font-size: small;
+    color: #3c4043;
+}
+
+main > p a {
+    color: #1a0dab;
+}
+
+footer {
+    color: #70757a;
+}
+
+footer > p {
+    font-size: 1.1rem;
+}
