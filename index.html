@@ -24,11 +24,15 @@
         </nav>
 
         <main>
-            <img src="images/google-logo.png" alt="Colourful Google logo">
+            <div class="logo-container">
+                <img src="images/google-logo.png" alt="Colourful Google logo">
+            </div>
             <form>
-                <label for="search-input"><span class="material-icons">search</span></label>
-                <input type="search" id="search-input" name="search-input" aria-label="Search the internet">
-                <span class="material-icons">mic</span>
+                <div class="search-bar-container">
+                    <label for="search-bar"><span class="material-icons">search</span></label>
+                    <input type="search" id="search-bar" name="search-bar" aria-label="Search the internet">
+                    <span class="material-icons">mic</span>
+                </div>
                 <button type="button" name="search-btn">Buscar con Google</button>
                 <button type="button" name="luck-btn">Voy a tener suerte</button>
             </form>
