@@ -68,7 +68,7 @@ footer a {
 }
 
 footer > p {
-    font-size: 1.1rem;
+    font-size: 1.07rem;
 }
 
 
@@ -120,6 +120,7 @@ nav .material-icons:focus {
 
 #login-btn {
     padding: .5em 1.5em;
+    min-width: max-content;
     background-color: #1a73e8;
     text-decoration: none;
     border-radius: 5px;
@@ -157,7 +158,7 @@ main {
 }
 
 main img {
-    width: 22rem;
+    width: 17rem;
 }
 
 main form {
@@ -219,7 +220,7 @@ button + button {
 }
 
 main > p {
-    flex-grow: 3;
+    flex-grow: 2;
     margin-top: 2em;
 }
 
@@ -227,4 +228,77 @@ main p a {
     display: inline-block;
     margin-inline: .2em;
     text-decoration: none;
+}
+
+main p a:hover,
+main p a:focus {
+    text-decoration: underline;
+}
+
+
+/********** Footer **********/
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+footer > p {
+    margin: 0;
+    padding: .8em 1.8em;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links-container > div {
+    padding: 1.1em 2.5em;
+}
+
+.footer-links-container a {
+    text-decoration: none;
+}
+
+.footer-links-container a:hover,
+.footer-links-container a:focus {
+    text-decoration: underline;
+}
+
+.footer-links-container a + a {
+    margin-left: 1.9em;
+}
+
+.footer-links-container #carbon-link {
+    margin-left: 1.7rem;
+    position: relative;  
+}
+
+.footer-links-container #carbon-link span {
+    position: absolute;
+    left: -1.2em;
+    top: -.2em;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .footer-links-container {
+        justify-content: space-evenly;
+    }
+
+    .footer-links-container > div:nth-child(2) {
+        order: -1;  
+        width: 100%;
+    }
+
+    .footer-links-container #carbon-link {
+        margin-inline: auto;
+        width: max-content;
+        text-align: center;
+    }
+
 }
